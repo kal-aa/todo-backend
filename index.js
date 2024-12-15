@@ -15,6 +15,8 @@ app.use(bodyParser.json());
 app.use(logger);
 app.use(route);
 
-app.listen(PORT, () => {
-  console.log("You're listening to port", PORT);
-});
+export default app;
+
+// app.listen(PORT, () => {
+//   console.log("You're listening to port", PORT);
+// });
