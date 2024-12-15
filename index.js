@@ -5,18 +5,13 @@ import logger from "./logger.js";
 import route from "./route.js";
 
 const app = express();
-app.use(
-  cors({
-    origin: ["http://localhost:4000", "https://kal-aa.github.io"],
-  })
-);
-
+app.use(cors());
 app.use(bodyParser.json());
 app.use(logger);
 app.use(route);
 
-export default app;
+const PORT = process.env.PORT || 3001;
 
-// app.listen(PORT, () => {
-//   console.log("You're listening to port", PORT);
-// });
+app.listen(PORT, () => {
+  console.log("You're listening to port", PORT);
+});
