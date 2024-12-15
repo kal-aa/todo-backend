@@ -79,6 +79,10 @@ app.delete("/delete-todo/:id", (req, res) => {
   }
 });
 
+export default (req, res) => {
+  app(req, res);
+};
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
