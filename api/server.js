@@ -83,6 +83,6 @@ export default (req, res) => {
   app(req, res);
 };
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server running on port ${PORT}`);
+// });
