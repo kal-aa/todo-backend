@@ -19,6 +19,10 @@ const saveData = (data) => {
   fs.writeFileSync("public/assets/data.json", JSON.stringify(data, null, 2));
 };
 
+app.get('/', (req, res) => {
+  res.send('Welcome to my todo-backend')
+})
+
 //  READ all
 app.get("/todo", (req, res) => {
   const data = loadData();
