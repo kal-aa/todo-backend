@@ -7,10 +7,7 @@ import route from "./route.js";
 const app = express();
 app.use(
   cors({
-    origin: [
-      "http://localhost:4000",
-      "https://todo-backend-ten-tau.vercel.app",
-    ],
+    origin: ["http://localhost:4000", "https://kal-aa.github.io"],
   })
 );
 
