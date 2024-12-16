@@ -1,8 +1,10 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
+import dotenv from "dotenv";
 import logger from "./logger.js";
 import route from "./route.js";
+dotenv.config();
 
 const app = express();
 app.use(cors());
